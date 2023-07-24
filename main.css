@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+}
+
+body {
+    background-image: url(./background-foto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1 {
+    color:rgb(255, 255, 255)
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+    background-color: transparent;
+    backdrop-filter: blur(7px);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    padding: 16px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+form input {
+    padding: 16px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin: 10px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+form button {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 16px;
+    border-radius: 4px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+ul {
+    width: 100%;
+    max-width: 280px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: 24px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+ul li {
+    cursor: pointer;
+    padding: 5px;
+}
+
+ul .feito {
+    text-decoration: line-through;
+}
