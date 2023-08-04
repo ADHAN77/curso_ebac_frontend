@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt_Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./main.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>CADASTRO</h1>
+        <form>
+            <div class="campo">
+                <input type="text" id="nome" placeholder="NOME">
+            </div>
+            <div class="campo">
+                <input type="email" id="email" placeholder="E-MAIL">
+            </div>
+            <div class="campo">
+                <input type="tel" id="telefone" placeholder="TELEFONE">
+            </div>
+            <div class="campo">
+                <input type="tel" id="CPF" placeholder="CPF">
+            </div>
+            <div class="campo">
+                <input type="tel" id="CEP" placeholder="CEP">
+            </div>
+            <button type="submit">CADASTRAR</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            
+            $('#telefone').mask('(00) 00000-0000')
+
+            $('#CPF').mask('000.000.000-00')
+
+            $('#CEP').mask('00000-000')
+        })
+    </script>
+</body>
+</html>

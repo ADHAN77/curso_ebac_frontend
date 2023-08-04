@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(196, 39, 0);
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+}
+
+form button {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Bungee Spice', cursive;
+}
+
+.container{
+    background-color: rgb(68, 68, 68);
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.644);
+    font-family: 'Bungee Spice', cursive;
+}
+
+.campo, input {
+    margin-bottom: 8px;
+    font-family: 'Bungee Spice', cursive;
+}
