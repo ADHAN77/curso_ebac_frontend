@@ -1,0 +1,21 @@
+@use 'config/reset.scss';
+@use 'config/cores.scss';
+@use 'secoes/produtos.scss';
+@use 'secoes/screen.scss';
+@use 'secoes/menu.scss';
+@use 'secoes/header.scss';
+
+body {
+    background-color: cores.$corDeFundo;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 56px 0;
+}
+
