@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Cabecalho from './components/Cabecalho';
+import Hero from './components/Hero';            
+import GlobalStyles from './Styles/global'; 
+import Container from './containers/container';
+import FormVagas from './components/FormVagas';
+import ListaVagas from './components/ListaVagas';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyles />
+        <Cabecalho />
+        <Hero />  
+        <Container>        
+          <FormVagas aoPesquisar={(termo: string) => console.log(termo)} />
+          <ListaVagas />
+        </Container>
+    </>
   );
 }
 
