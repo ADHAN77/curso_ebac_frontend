@@ -1,4 +1,3 @@
-// src/components/FormVagas/FormVagas.styled.ts
 import styled from 'styled-components';
 
 export const Form = styled.form`
